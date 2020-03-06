@@ -1,6 +1,6 @@
 ---
 layout: page
-subtitle: My Learnings On
+sub-title: My Learnings On
 title: Data Science & Machine Learning
 subtitle: I am a Data Scientist in my early career, here I will be sharing my learnings.
 use-site-title: true
@@ -10,8 +10,8 @@ use-site-title: true
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | relative_url }}">
+    <h3 class="post-sub-title">{{ post.sub-title }}</h3>
 	  <h2 class="post-title">{{ post.title }}</h2>
-
 	  {% if post.subtitle %}
 	  <h3 class="post-subtitle">
 	    {{ post.subtitle }}
